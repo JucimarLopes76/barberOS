@@ -1,4 +1,5 @@
-declare module 'next-pwa' {
+declare module '@ducanh2912/next-pwa' {
   import type { NextConfig } from 'next';
-  export default function withPWAInit(options: any): (config: NextConfig) => NextConfig;
+  function withPWAInit(options: Record<string, unknown>): (config: NextConfig) => NextConfig;
+  export default withPWAInit;
 }
